@@ -11,13 +11,13 @@ public class Story {
     //the name of news section
     private String mSection;
     //The combined date and time of publication
-    private String mDate;
+    private long mDate;
     // url of html content
     private String mWebUrl;
 
     //constructor
 
-    public Story(String title, String section, String pubdate, String webUrl) {
+    public Story(String title, String section, long pubdate, String webUrl) {
         this.mTitle = title;
         this.mSection = section;
         this.mDate = pubdate;
@@ -32,7 +32,7 @@ public class Story {
         return mSection;
     }
 
-    public String getDate() {
+    public long getDate() {
         return mDate;
     }
 
